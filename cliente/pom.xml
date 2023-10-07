@@ -11,10 +11,10 @@
     </parent>
 
     <groupId>com.dynns.cloudtecnologia</groupId>
-    <artifactId>clientes</artifactId>
+    <artifactId>cliente</artifactId>
     <version>1.0</version>
     <name>clientes</name>
-    <description>Microsserviço de Clientes</description>
+    <description>Microsserviços de Clientes</description>
 
     <properties>
         <java.version>20</java.version>

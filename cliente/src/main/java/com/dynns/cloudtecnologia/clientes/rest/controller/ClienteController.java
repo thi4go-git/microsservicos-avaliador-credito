@@ -7,6 +7,7 @@ import com.dynns.cloudtecnologia.clientes.service.impl.ClienteServiceImpl;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,6 +17,7 @@ import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import java.net.URI;
 
+@Slf4j
 @RestController
 @RequestMapping("api/clientes")
 public class ClienteController {
@@ -30,6 +32,7 @@ public class ClienteController {
     @GetMapping("/status")
     ResponseEntity<String> getStatusApi() {
         String staus = "Microsserviço de Clientes rodando!";
+        log.info(staus);
         return ResponseEntity.ok(staus);
     }
 
