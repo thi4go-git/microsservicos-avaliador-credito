@@ -1,6 +1,6 @@
 package com.dynns.cloudtecnologia.avaliador.rest.client;
 
-import com.dynns.cloudtecnologia.avaliador.rest.dto.ClienteDTOnew;
+import com.dynns.cloudtecnologia.rest.dto.*;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

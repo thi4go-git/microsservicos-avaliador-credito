@@ -1,7 +1,10 @@
 package com.dynns.cloudtecnologia.avaliador.service;
 
-import com.dynns.cloudtecnologia.avaliador.rest.dto.AvaliacaoDTO;
+
+import com.dynns.cloudtecnologia.rest.dto.AvaliacaoDTO;
 
 public interface AvaliadorService {
-    AvaliacaoDTO avaliar (Long idCartao,String cpfCliente);
+    AvaliacaoDTO avaliar (Long idCartao, String cpfCliente);
+
+    void enviarAvaliacaoDTOKafka(AvaliacaoDTO AvaliacaoDTO);
 }

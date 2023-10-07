@@ -1,8 +1,7 @@
 package com.dynns.cloudtecnologia.avaliador.rest.controller;
 
-
-import com.dynns.cloudtecnologia.avaliador.rest.dto.AvaliacaoDTO;
 import com.dynns.cloudtecnologia.avaliador.service.impl.AvaliadorServiceImpl;
+import com.dynns.cloudtecnologia.rest.dto.AvaliacaoDTO;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
