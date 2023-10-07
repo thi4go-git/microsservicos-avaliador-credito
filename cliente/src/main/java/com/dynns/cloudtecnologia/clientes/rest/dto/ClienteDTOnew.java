@@ -4,6 +4,7 @@ import com.dynns.cloudtecnologia.clientes.anottation.CPFUnico;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.validator.constraints.br.CPF;
 
 import javax.validation.constraints.*;
 
@@ -16,6 +17,7 @@ public class ClienteDTOnew {
     @Size(min = 11, max = 11, message = "O cpf deverá conter 11 caracteres.")
     @Pattern(regexp = "\\d{11}", message = "O cpf deverá conter apenas números.")
     @CPFUnico
+    @CPF(message = "O cpf digitado não é válido")
     private String cpf;
 
     @NotBlank(message = "O nome deverá ser informado.")
