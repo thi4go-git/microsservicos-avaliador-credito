@@ -24,6 +24,9 @@ public class GatewayApplication {
                 .route(r ->
                         r.path("/api/clientes/**").uri("lb://ms-cliente")
                 )
+                .route(r ->
+                        r.path("/api/cartoes/**").uri("lb://ms-cartao")
+                )
                 .build();
     }
 

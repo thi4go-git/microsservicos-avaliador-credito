@@ -19,7 +19,7 @@ import java.net.URI;
 
 @Slf4j
 @RestController
-@RequestMapping("/cartoes")
+@RequestMapping("/api/cartoes")
 public class CartaoController {
 
     @Autowired
