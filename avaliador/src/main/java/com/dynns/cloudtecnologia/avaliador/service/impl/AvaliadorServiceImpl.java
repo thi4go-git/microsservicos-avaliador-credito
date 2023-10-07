@@ -7,6 +7,7 @@ import com.dynns.cloudtecnologia.avaliador.rest.dto.AvaliacaoDTO;
 import com.dynns.cloudtecnologia.avaliador.rest.dto.CartaoDTOnew;
 import com.dynns.cloudtecnologia.avaliador.rest.dto.ClienteDTOnew;
 import com.dynns.cloudtecnologia.avaliador.service.AvaliadorService;
+import feign.FeignException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -28,15 +29,15 @@ public class AvaliadorServiceImpl implements AvaliadorService {
         ClienteDTOnew clienteDTOnew = new ClienteDTOnew();
         try {
             clienteDTOnew = clienteClient.getClienteByCpf(cpfCliente).getBody();
-        } catch (Exception e) {
-            throw new GeralException("Erro ao obter ClienteDTOnew");
+        } catch (FeignException.FeignClientException e) {
+            throw new GeralException("Erro ao obter ClienteDTOnew - Status: " + e.status() + " - " + e.getMessage());
         }
 
         CartaoDTOnew cartaoDTOnew = new CartaoDTOnew();
         try {
             cartaoDTOnew = cartaoClient.getCartaoById(idCartao).getBody();
-        } catch (Exception e) {
-            throw new GeralException("Erro ao obter CartaoDTOnew");
+        } catch (FeignException.FeignClientException e) {
+            throw new GeralException("Erro ao obter CartaoDTOnew - Status: " + e.status() + " - " + e.getMessage());
         }
 
         AvaliacaoDTO avaliacaoDTO = new AvaliacaoDTO();
