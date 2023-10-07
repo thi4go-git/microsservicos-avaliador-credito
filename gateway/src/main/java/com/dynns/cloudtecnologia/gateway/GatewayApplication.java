@@ -21,12 +21,9 @@ public class GatewayApplication {
     public RouteLocator routes(RouteLocatorBuilder builder) {
         return builder
                 .routes()
-                .route(r ->
-                        r.path("/api/clientes/**").uri("lb://ms-cliente")
-                )
-                .route(r ->
-                        r.path("/api/cartoes/**").uri("lb://ms-cartao")
-                )
+                .route(r -> r.path("/api/clientes/**").uri("lb://ms-cliente"))
+                .route(r -> r.path("/api/cartoes/**").uri("lb://ms-cartao"))
+                .route(r -> r.path("/api/avaliador/**").uri("lb://ms-avaliador"))
                 .build();
     }
 
