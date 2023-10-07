@@ -52,7 +52,7 @@ public class ClienteController {
     }
 
 
-    @GetMapping("{cpf}")
+    @GetMapping("/{cpf}")
     @Operation(summary = "Buscar cliente pelo CPF", description = "Este endpoint busca cliente pelo CPF")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Cliente Localizado!"),
@@ -60,7 +60,7 @@ public class ClienteController {
             @ApiResponse(responseCode = "500", description = "Internal Server Error")
     })
     ResponseEntity<ClienteDTOnew> getByCpf(
-            @RequestParam @NotBlank(message = "O cpf é obrigatório!") final String cpf
+            @PathVariable("cpf") @NotBlank(message = "O cpf é obrigatório!") final String cpf
     ) {
         Cliente cliente = clienteService.findByCpfOrThrow(cpf);
         return ResponseEntity.ok().body(clienteMapper.clienteToClienteDTOnew(cliente));
