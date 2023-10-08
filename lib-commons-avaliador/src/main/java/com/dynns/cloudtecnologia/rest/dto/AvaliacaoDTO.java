@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class AvaliacaoDTO {
+    private String protocolo;
     private ClienteDTOnew clienteDTOnew;
     private CartaoDTOnew cartaoDTOnew;
 }

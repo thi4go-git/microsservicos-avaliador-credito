@@ -5,6 +5,4 @@ import com.dynns.cloudtecnologia.rest.dto.AvaliacaoDTO;
 
 public interface AvaliadorService {
     AvaliacaoDTO avaliar (Long idCartao, String cpfCliente);
-
-    void enviarAvaliacaoDTOKafka(AvaliacaoDTO AvaliacaoDTO);
 }
