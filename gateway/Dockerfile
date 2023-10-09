@@ -1,10 +1,10 @@
-FROM maven:3.8.6-jdk-20 as build
+FROM maven:3.8.6-jdk-11 as build
 WORKDIR /build
 COPY . .
 RUN mvn clean package -DskipTests
 
 
-FROM openjdk:20
+FROM openjdk:11
 WORKDIR /app
 COPY --from=build ./build/target/*.jar ./application.jar
 EXPOSE 8686

@@ -1,17 +1,98 @@
 version: "3"
 
 services:
+  rabbitmq:
+    container_name: RABBIT_MQ
+    image: rabbitmq:3.9-management    
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    restart: always
+    networks: 
+      - avaliador-de-credito
+      
   eureka:
-    container_name: eureka-discovery
+    container_name: EUREKA_DISCOVERY
     image: eureka-discovery:latest
     build:
       context: ./eureka-discovery/
       dockerfile: Dockerfile
       args:
-        - JAR_FILE=target/eureka-discovery-1.0.0.jar
+        - JAR_FILE=target/eureka-discovery-1.0.jar
         - CONTEXT=eureka-discovery
     ports:
       - 8761:8761
     restart: always
     networks: 
-      - avaloiador-credito
+      - avaliador-de-credito
+      
+  cliente:
+    container_name: CLIENTE_MS
+    image: cliente:latest
+    build:
+      context: ./cliente/
+      dockerfile: Dockerfile
+      args:
+        - JAR_FILE=target/cliente-1.0.jar
+        - CONTEXT=cliente
+    restart: always
+    depends_on:
+      - eureka
+    networks: 
+      - avaliador-de-credito
+      
+  cartao:
+    container_name: CARTAO_MS
+    image: cartao:latest
+    build:
+      context: ./cartao/
+      dockerfile: Dockerfile
+      args:
+        - JAR_FILE=target/cartao-1.0.jar
+        - CONTEXT=cartao
+    restart: always
+    depends_on:
+      - eureka
+      - rabbitmq
+    networks: 
+      - avaliador-de-credito
+      
+  avaliador:
+    container_name: AVALIADOR_MS
+    image: avaliador:latest
+    build:
+      context: ./avaliador/
+      dockerfile: Dockerfile
+      args:
+        - JAR_FILE=target/avaliador-1.0.jar
+        - CONTEXT=avaliador
+    restart: always
+    depends_on:
+      - eureka
+      - rabbitmq
+    networks: 
+      - avaliador-de-credito
+      
+  gateway:
+    container_name: GATEWAY_CLOUD
+    image: gateway-cloud:latest
+    build:
+      context: ./gateway/
+      dockerfile: Dockerfile
+      args:
+        - JAR_FILE=target/gateway-1.0.jar
+        - CONTEXT=gateway
+    ports:
+      - 8686:8686
+    restart: always
+    depends_on:
+      - eureka
+      - cliente
+      - cartao
+      - avaliador 
+    networks: 
+      - avaliador-de-credito
+          
+      
+networks:
+  avaliador-de-credito:
