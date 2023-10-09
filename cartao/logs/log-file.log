@@ -1,0 +1,790 @@
+2023-10-09 13:57:14.265  INFO 14932 --- [restartedMain] c.d.c.cartao.CartaoApplication           : Starting CartaoApplication using Java 20.0.2 on THIAGO-PC with PID 14932 (D:\DESENVOLVIMENTO\estudos\microsservicos-avaliador-credito\cartao\target\classes started by Thiago in D:\DESENVOLVIMENTO\estudos\microsservicos-avaliador-credito\cartao)
+2023-10-09 13:57:14.268  INFO 14932 --- [restartedMain] c.d.c.cartao.CartaoApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-10-09 13:57:14.405  INFO 14932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-09 13:57:14.406  INFO 14932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-09 13:57:17.973  INFO 14932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-09 13:57:18.489  INFO 14932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 445 ms. Found 1 JPA repository interfaces.
+2023-10-09 13:57:19.397  INFO 14932 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e1fb99dc-e67e-3d8a-83b9-7e6839d51031
+2023-10-09 13:57:21.593  INFO 14932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-10-09 13:57:21.616  INFO 14932 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-09 13:57:21.617  INFO 14932 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-10-09 13:57:21.961  INFO 14932 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-09 13:57:21.962  INFO 14932 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7549 ms
+2023-10-09 13:57:22.328  INFO 14932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-09 13:57:22.722  INFO 14932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-09 13:57:22.744  INFO 14932 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cartao'
+2023-10-09 13:57:23.468  INFO 14932 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-09 13:57:23.600  INFO 14932 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-09 13:57:23.901  INFO 14932 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-09 13:57:24.070  INFO 14932 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-10-09 13:57:24.905  INFO 14932 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-09 13:57:24.918  INFO 14932 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-09 13:57:25.562  WARN 14932 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-09 13:57:27.753  WARN 14932 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-10-09 13:57:27.877  INFO 14932 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-10-09 13:57:28.019  WARN 14932 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-10-09 13:57:28.033  INFO 14932 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2023-10-09 13:57:28.182  INFO 14932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63260 (http) with context path ''
+2023-10-09 13:57:28.184  INFO 14932 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 63260
+2023-10-09 13:57:28.191  INFO 14932 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-10-09 13:57:28.498  INFO 14932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-10-09 13:57:28.544  INFO 14932 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-10-09 13:57:28.603  INFO 14932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-10-09 13:57:28.603  INFO 14932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-10-09 13:57:28.603  INFO 14932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-10-09 13:57:28.603  INFO 14932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-10-09 13:57:28.603  INFO 14932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-10-09 13:57:28.604  INFO 14932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-10-09 13:57:28.604  INFO 14932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-10-09 13:57:29.213  INFO 14932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-10-09 13:57:29.218  INFO 14932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-10-09 13:57:29.228  INFO 14932 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-10-09 13:57:29.236  INFO 14932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1696870649235 with initial instances count: 0
+2023-10-09 13:57:29.248  INFO 14932 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MS-CARTAO with eureka with status UP
+2023-10-09 13:57:29.251  INFO 14932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1696870649251, current=UP, previous=STARTING]
+2023-10-09 13:57:29.257  INFO 14932 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-CARTAO/ms-cartao:35c4d6281e130329eeb811b63747b369: registering service...
+2023-10-09 13:57:29.351  INFO 14932 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 13:57:29.405  INFO 14932 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-CARTAO/ms-cartao:35c4d6281e130329eeb811b63747b369 - registration status: 204
+2023-10-09 13:57:31.401  INFO 14932 --- [restartedMain] o.s.a.r.l.SimpleMessageListenerContainer : Broker not available; cannot force queue declarations during start: java.net.ConnectException: Connection refused: no further information
+2023-10-09 13:57:31.423  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 13:57:33.455  INFO 14932 --- [restartedMain] c.d.c.cartao.CartaoApplication           : Started CartaoApplication in 20.234 seconds (JVM running for 21.25)
+2023-10-09 13:57:38.443  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 13:57:38.449  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@680f5a7c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 13:57:38.455  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 13:57:45.480  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 13:57:45.481  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@53a16e24: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 13:57:45.486  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 13:57:52.544  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 13:57:52.544  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@7207af87: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 13:57:52.546  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 13:57:59.219  INFO 14932 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-10-09 13:57:59.220  INFO 14932 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-10-09 13:57:59.220  INFO 14932 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-10-09 13:57:59.220  INFO 14932 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-10-09 13:57:59.220  INFO 14932 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-10-09 13:57:59.220  INFO 14932 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2023-10-09 13:57:59.220  INFO 14932 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-10-09 13:57:59.259  INFO 14932 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-10-09 13:57:59.570  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 13:57:59.570  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6147ceca: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 13:57:59.573  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 13:58:06.587  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 13:58:06.587  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@18ee0c34: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 13:58:06.589  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-6] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 13:58:13.608  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-6] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 13:58:13.608  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-6] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@42ddac4e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 13:58:13.610  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-7] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 13:58:20.639  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-7] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 13:58:20.639  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-7] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@56a47c23: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 13:58:20.641  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-8] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 13:58:27.673  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-8] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 13:58:27.673  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-8] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@7a994779: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 13:58:27.674  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-9] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 13:58:34.700  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-9] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 13:58:34.700  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-9] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@3c97bcfc: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 13:58:34.702  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-10] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 13:58:41.715  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-10] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 13:58:41.715  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-10] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@60f33f1b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 13:58:41.717  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-11] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 13:58:48.743  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-11] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 13:58:48.743  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-11] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6136d0db: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 13:58:48.744  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-12] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 13:58:55.767  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-12] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 13:58:55.767  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-12] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6a2e9a92: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 13:58:55.768  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-13] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 13:59:02.797  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-13] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 13:59:02.797  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-13] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@638dc20: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 13:59:02.799  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-14] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 13:59:09.830  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-14] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 13:59:09.830  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-14] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@62d26535: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 13:59:09.831  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-15] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 13:59:16.853  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-15] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 13:59:16.853  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-15] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6617bacb: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 13:59:16.854  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-16] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 13:59:23.887  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-16] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 13:59:23.887  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-16] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@3ab6bc2a: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 13:59:23.890  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-17] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 13:59:30.916  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-17] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 13:59:30.916  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-17] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5b6875b0: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 13:59:30.918  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-18] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 13:59:37.947  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-18] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 13:59:37.947  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-18] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@50c418b4: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 13:59:37.948  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-19] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 13:59:44.965  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-19] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 13:59:44.965  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-19] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1d939f98: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 13:59:44.966  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-20] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 13:59:51.995  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-20] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 13:59:51.996  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-20] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@157de04f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 13:59:52.000  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-21] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 13:59:59.115  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-21] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 13:59:59.115  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-21] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@def9eca: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 13:59:59.117  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-22] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:00:06.145  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-22] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:00:06.145  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-22] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5bb58eb: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:00:06.146  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-23] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:00:13.172  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-23] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:00:13.172  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-23] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6c8b326b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:00:13.175  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-24] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:00:20.190  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-24] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:00:20.190  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-24] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@240ea7d4: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:00:20.191  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-25] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:00:27.212  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-25] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:00:27.212  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-25] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@68f9e93d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:00:27.213  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-26] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:00:34.240  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-26] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:00:34.240  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-26] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@26900eb5: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:00:34.244  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-27] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:00:41.261  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-27] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:00:41.261  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-27] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@564c3859: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:00:41.264  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-28] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:00:48.283  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-28] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:00:48.283  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-28] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@19f01e05: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:00:48.286  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-29] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:00:55.310  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-29] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:00:55.310  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-29] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@21659def: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:00:55.312  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-30] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:01:02.327  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-30] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:01:02.327  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-30] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@7ea9bb2a: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:01:02.328  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-31] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:01:09.356  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-31] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:01:09.356  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-31] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@70540f85: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:01:09.357  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-32] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:01:16.384  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-32] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:01:16.385  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-32] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5115b00d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:01:16.388  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-33] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:01:23.410  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-33] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:01:23.410  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-33] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@3a5c69c6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:01:23.412  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-34] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:01:30.440  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-34] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:01:30.440  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-34] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@11654d5d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:01:30.442  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-35] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:01:37.470  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-35] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:01:37.470  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-35] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@502c297f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:01:37.471  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-36] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:01:44.501  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-36] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:01:44.501  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-36] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@7f16b6be: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:01:44.502  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-37] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:01:51.520  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-37] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:01:51.520  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-37] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1334bdf2: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:01:51.521  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-38] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:01:58.546  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-38] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:01:58.546  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-38] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@4ab49013: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:01:58.547  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-39] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:02:05.564  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-39] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:02:05.564  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-39] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@60f3a80c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:02:05.566  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-40] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:02:12.581  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-40] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:02:12.581  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-40] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@3dc479ca: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:02:12.584  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-41] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:02:19.605  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-41] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:02:19.606  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-41] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@119b5351: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:02:19.610  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-42] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:02:26.627  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-42] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:02:26.627  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-42] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2efc863d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:02:26.629  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-43] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:02:28.610  INFO 14932 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-10-09 14:02:33.657  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-43] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:02:33.657  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-43] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@3e6698bc: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:02:33.660  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-44] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:02:40.690  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-44] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:02:40.690  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-44] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@763ca161: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:02:40.692  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-45] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:02:47.720  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-45] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:02:47.720  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-45] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6cdd8824: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:02:47.722  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-46] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:02:54.770  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-46] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:02:54.770  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-46] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@666eda52: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:02:54.771  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-47] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:03:01.808  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-47] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:03:01.808  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-47] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@78b8ebf1: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:03:01.810  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-48] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:03:08.839  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-48] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:03:08.839  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-48] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6315d298: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:03:08.840  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-49] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:03:15.869  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-49] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:03:15.869  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-49] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@709b02c9: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:03:15.870  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-50] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:03:22.891  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-50] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:03:22.891  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-50] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@40330732: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:03:22.894  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-51] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:03:29.912  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-51] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:03:29.912  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-51] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@66b96e19: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:03:29.914  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-52] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:03:36.947  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-52] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:03:36.947  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-52] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@3ead7ce4: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:03:36.949  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-53] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:03:43.992  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-53] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:03:43.992  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-53] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@3a6da6d6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:03:43.994  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-54] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:03:51.024  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-54] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:03:51.025  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-54] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2c99ad75: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:03:51.027  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-55] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:03:58.071  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-55] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:03:58.071  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-55] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@79a680f5: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:03:58.072  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-56] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:04:05.102  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-56] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:04:05.103  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-56] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@14e5de20: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:04:05.105  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-57] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:04:12.128  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-57] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:04:12.128  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-57] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1970f3ac: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:04:12.130  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-58] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:04:19.150  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-58] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:04:19.150  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-58] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@3ee82c15: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:04:19.152  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-59] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:04:26.169  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-59] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:04:26.169  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-59] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@4c5ea190: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:04:26.171  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-60] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:04:33.199  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-60] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:04:33.199  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-60] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@7ab4ca15: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:04:33.201  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-61] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:04:40.229  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-61] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:04:40.229  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-61] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@388a0935: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:04:40.230  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-62] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:04:47.256  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-62] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:04:47.256  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-62] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@715b5535: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:04:47.257  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-63] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:04:54.315  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-63] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:04:54.315  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-63] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@770d0aad: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:04:54.316  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-64] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:05:01.343  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-64] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:05:01.343  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-64] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@63ac8ad9: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:05:01.347  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-65] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:05:08.369  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-65] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:05:08.369  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-65] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6c1cfc68: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:05:08.370  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-66] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:05:15.415  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-66] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:05:15.415  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-66] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@76279676: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:05:15.418  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-67] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:05:22.453  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-67] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:05:22.453  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-67] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5b7b14f2: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:05:22.455  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-68] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:05:29.478  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-68] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:05:29.478  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-68] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5161b0d9: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:05:29.480  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-69] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:05:36.513  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-69] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:05:36.513  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-69] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@45996d6d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:05:36.515  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-70] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:05:43.544  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-70] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:05:43.544  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-70] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6f236c29: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:05:43.547  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-71] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:05:50.582  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-71] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:05:50.582  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-71] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6f4f1ec: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:05:50.584  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-72] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:05:57.622  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-72] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:05:57.622  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-72] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@3727df90: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:05:57.624  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-73] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:06:04.648  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-73] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:06:04.648  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-73] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@7217afc8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:06:04.649  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-74] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:06:05.006  INFO 14932 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-09 14:06:05.007  INFO 14932 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-09 14:06:05.009  INFO 14932 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-10-09 14:06:11.676  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-74] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:06:11.676  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-74] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@68b1913d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:06:11.677  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-75] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:06:18.702  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-75] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:06:18.702  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-75] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@131e25cd: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:06:18.711  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-76] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:06:25.759  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-76] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:06:25.759  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-76] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6fa9154: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:06:25.760  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-77] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:06:32.830  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-77] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:06:32.830  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-77] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@39b03102: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:06:32.831  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-78] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:06:39.855  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-78] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:06:39.855  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-78] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1d56730f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:06:39.856  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-79] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:06:46.882  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-79] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:06:46.882  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-79] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@3bd8ebf: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:06:46.883  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-80] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:06:53.911  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-80] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:06:53.911  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-80] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2b45cc95: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:06:53.913  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-81] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:07:00.931  WARN 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-81] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2023-10-09 14:07:00.931  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-81] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@c759e86: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:07:00.933  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-82] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:07:05.970  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-82] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1354e697: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:07:05.971  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-83] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:07:10.989  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-83] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@79e46ef5: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2023-10-09 14:07:10.992  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-84] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:07:11.049  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-84] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#35d0f3ac:84/SimpleConnection@62e4048d [delegate=amqp://guest@192.168.0.103:5672/, localPort= 64065]
+2023-10-09 14:07:28.612  INFO 14932 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-10-09 14:08:12.288  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-84] c.d.c.c.i.r.AvaliacaoDTOSubscriber       : ::: Avaliação recebida do Rabbit: {"protocolo":"ef853d7f-0153-4f45-ab78-aadec4dfb966","clienteDTOnew":{"cpf":"04922105190","nome":"Thiago jr","idade":29},"cartaoDTOnew":{"id":null,"nome":null,"limite":null}}
+2023-10-09 14:12:28.613  INFO 14932 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-10-09 14:14:38.554  INFO 14932 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MS-CARTAO with eureka with status DOWN
+2023-10-09 14:14:38.554  INFO 14932 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1696871678554, current=DOWN, previous=UP]
+2023-10-09 14:14:38.554  INFO 14932 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-CARTAO/ms-cartao:35c4d6281e130329eeb811b63747b369: registering service...
+2023-10-09 14:14:38.565  INFO 14932 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-CARTAO/ms-cartao:35c4d6281e130329eeb811b63747b369 - registration status: 204
+2023-10-09 14:14:38.565  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-85] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2023-10-09 14:14:38.659  INFO 14932 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-85] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2023-10-09 14:14:38.695  INFO 14932 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-09 14:14:38.959  WARN 14932 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-10-09 14:14:38.961  INFO 14932 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-09 14:14:39.012  INFO 14932 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-09 14:14:39.013  INFO 14932 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-10-09 14:14:42.015  INFO 14932 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-10-09 14:14:42.023  INFO 14932 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-CARTAO/ms-cartao:35c4d6281e130329eeb811b63747b369 - deregister  status: 200
+2023-10-09 14:14:42.030  INFO 14932 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-10-09 14:22:00.349  INFO 7652 --- [restartedMain] c.d.c.cartao.CartaoApplication           : Starting CartaoApplication using Java 20.0.2 on THIAGO-PC with PID 7652 (D:\DESENVOLVIMENTO\estudos\microsservicos-avaliador-credito\cartao\target\classes started by Thiago in D:\DESENVOLVIMENTO\estudos\microsservicos-avaliador-credito\cartao)
+2023-10-09 14:22:00.351  INFO 7652 --- [restartedMain] c.d.c.cartao.CartaoApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-10-09 14:22:00.435  INFO 7652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-09 14:22:00.435  INFO 7652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-09 14:22:01.870  INFO 7652 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-09 14:22:02.033  INFO 7652 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 154 ms. Found 1 JPA repository interfaces.
+2023-10-09 14:22:02.395  INFO 7652 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e1fb99dc-e67e-3d8a-83b9-7e6839d51031
+2023-10-09 14:22:03.313  INFO 7652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-10-09 14:22:03.331  INFO 7652 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-09 14:22:03.332  INFO 7652 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-10-09 14:22:03.493  INFO 7652 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-09 14:22:03.494  INFO 7652 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3059 ms
+2023-10-09 14:22:03.691  INFO 7652 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-09 14:22:03.952  INFO 7652 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-09 14:22:03.969  INFO 7652 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cartao'
+2023-10-09 14:22:04.180  INFO 7652 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-09 14:22:04.240  INFO 7652 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-09 14:22:04.567  INFO 7652 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-09 14:22:04.718  INFO 7652 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-10-09 14:22:05.412  INFO 7652 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-09 14:22:05.421  INFO 7652 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-09 14:22:05.993  WARN 7652 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-09 14:22:07.806  WARN 7652 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-10-09 14:22:07.881  INFO 7652 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-10-09 14:22:07.969  WARN 7652 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-10-09 14:22:07.978  INFO 7652 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2023-10-09 14:22:08.093  INFO 7652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 64292 (http) with context path ''
+2023-10-09 14:22:08.095  INFO 7652 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 64292
+2023-10-09 14:22:08.100  INFO 7652 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-10-09 14:22:08.231  INFO 7652 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-10-09 14:22:08.237  INFO 7652 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-10-09 14:22:08.264  INFO 7652 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-10-09 14:22:08.264  INFO 7652 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-10-09 14:22:08.264  INFO 7652 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-10-09 14:22:08.264  INFO 7652 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-10-09 14:22:08.264  INFO 7652 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-10-09 14:22:08.264  INFO 7652 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-10-09 14:22:08.264  INFO 7652 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-10-09 14:22:08.705  INFO 7652 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-10-09 14:22:08.712  INFO 7652 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-10-09 14:22:08.716  INFO 7652 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-10-09 14:22:08.727  INFO 7652 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1696872128723 with initial instances count: 1
+2023-10-09 14:22:08.731  INFO 7652 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MS-CARTAO with eureka with status UP
+2023-10-09 14:22:08.732  INFO 7652 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1696872128732, current=UP, previous=STARTING]
+2023-10-09 14:22:08.734  INFO 7652 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-CARTAO/ms-cartao:097a4efda4e3b52a10c60b9089e02df5: registering service...
+2023-10-09 14:22:08.795  INFO 7652 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.0.103:5672]
+2023-10-09 14:22:08.875  INFO 7652 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#35d0f3ac:0/SimpleConnection@1c0ebc23 [delegate=amqp://guest@192.168.0.103:5672/, localPort= 64295]
+2023-10-09 14:22:08.885  INFO 7652 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-CARTAO/ms-cartao:097a4efda4e3b52a10c60b9089e02df5 - registration status: 204
+2023-10-09 14:22:08.966  INFO 7652 --- [restartedMain] c.d.c.cartao.CartaoApplication           : Started CartaoApplication in 9.308 seconds (JVM running for 9.989)
+2023-10-09 14:23:30.406  INFO 7652 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-09 14:23:30.407  INFO 7652 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-09 14:23:30.410  INFO 7652 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-10-09 14:23:53.674  INFO 7652 --- [http-nio-auto-1-exec-1] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 252 ms
+2023-10-09 14:26:03.493  INFO 7652 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.d.c.c.i.r.AvaliacaoDTOSubscriber       : ::: Avaliação recebida do Rabbit: {"protocolo":"f81f1126-338d-4d41-8671-c77590c9f2a5","clienteDTOnew":{"cpf":"04922105190","nome":"Thiago junior amorim","idade":29},"cartaoDTOnew":{"id":null,"nome":null,"limite":null}}
+2023-10-09 14:26:34.725  INFO 7652 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MS-CARTAO with eureka with status DOWN
+2023-10-09 14:26:34.725  INFO 7652 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1696872394725, current=DOWN, previous=UP]
+2023-10-09 14:26:34.726  INFO 7652 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-CARTAO/ms-cartao:097a4efda4e3b52a10c60b9089e02df5: registering service...
+2023-10-09 14:26:34.737  INFO 7652 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-CARTAO/ms-cartao:097a4efda4e3b52a10c60b9089e02df5 - registration status: 204
+2023-10-09 14:26:34.750  INFO 7652 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2023-10-09 14:26:35.533  INFO 7652 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2023-10-09 14:26:35.577  INFO 7652 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-09 14:26:35.594 ERROR 7652 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Error thrown while acquiring connection from data source
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:188) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.checkSuspended(SessionLocal.java:1240) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.transitionToState(SessionLocal.java:1232) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.setCurrentCommand(SessionLocal.java:1210) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.endStatement(SessionLocal.java:1693) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Command.executeQuery(Command.java:227) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:538) ~[h2-2.1.214.jar:2.1.214]
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:408) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712) ~[HikariCP-4.0.3.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-10-09 14:26:35.786  WARN 7652 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-10-09 14:26:35.789  INFO 7652 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-09 14:26:35.848  INFO 7652 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-09 14:26:35.850  INFO 7652 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-10-09 14:26:38.822  INFO 7652 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://eureka-server:ZXVyZWthLXNlcnZlcg==@localhost:8761/eureka/} exception=I/O error on PUT request for "http://eureka-server:ZXVyZWthLXNlcnZlcg==@localhost:8761/eureka/apps/MS-CARTAO/ms-cartao:097a4efda4e3b52a10c60b9089e02df5": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://eureka-server:ZXVyZWthLXNlcnZlcg==@localhost:8761/eureka/apps/MS-CARTAO/ms-cartao:097a4efda4e3b52a10c60b9089e02df5": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:608)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:109)
+	at org.springframework.http.client.support.BasicAuthenticationInterceptor.intercept(BasicAuthenticationInterceptor.java:79)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:93)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:77)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)
+	... 19 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:580)
+	at java.base/sun.nio.ch.Net.connect(Net.java:569)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:581)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 38 more
+
+2023-10-09 14:26:38.822  WARN 7652 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on PUT request for "http://eureka-server:ZXVyZWthLXNlcnZlcg==@localhost:8761/eureka/apps/MS-CARTAO/ms-cartao:097a4efda4e3b52a10c60b9089e02df5": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2023-10-09 14:26:38.825  INFO 7652 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://eureka-server:ZXVyZWthLXNlcnZlcg==@localhost:8761/eureka/} exception=I/O error on GET request for "http://eureka-server:ZXVyZWthLXNlcnZlcg==@localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://eureka-server:ZXVyZWthLXNlcnZlcg==@localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:608)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getDelta(RestTemplateEurekaHttpClient.java:155)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:109)
+	at org.springframework.http.client.support.BasicAuthenticationInterceptor.intercept(BasicAuthenticationInterceptor.java:79)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:93)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:77)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:580)
+	at java.base/sun.nio.ch.Net.connect(Net.java:569)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:581)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 41 more
+
+2023-10-09 14:26:38.826  WARN 7652 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on GET request for "http://eureka-server:ZXVyZWthLXNlcnZlcg==@localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2023-10-09 14:26:38.849  INFO 7652 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://eureka-server:ZXVyZWthLXNlcnZlcg==@localhost:8761/eureka/}, exception=I/O error on PUT request for "http://eureka-server:ZXVyZWthLXNlcnZlcg==@localhost:8761/eureka/apps/MS-CARTAO/ms-cartao:097a4efda4e3b52a10c60b9089e02df5": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://eureka-server:ZXVyZWthLXNlcnZlcg==@localhost:8761/eureka/apps/MS-CARTAO/ms-cartao:097a4efda4e3b52a10c60b9089e02df5": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:608)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:109)
+	at org.springframework.http.client.support.BasicAuthenticationInterceptor.intercept(BasicAuthenticationInterceptor.java:79)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:93)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:77)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)
+	... 20 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:580)
+	at java.base/sun.nio.ch.Net.connect(Net.java:569)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:581)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 39 more
+
+2023-10-09 14:26:38.849  WARN 7652 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on PUT request for "http://eureka-server:ZXVyZWthLXNlcnZlcg==@localhost:8761/eureka/apps/MS-CARTAO/ms-cartao:097a4efda4e3b52a10c60b9089e02df5": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2023-10-09 14:26:38.851  WARN 7652 --- [DiscoveryClient-1] c.netflix.discovery.TimedSupervisorTask  : task supervisor shutting down, can't accept the task
+2023-10-09 14:26:38.851  WARN 7652 --- [DiscoveryClient-0] c.netflix.discovery.TimedSupervisorTask  : task supervisor shutting down, can't accept the task
+2023-10-09 14:26:38.853 ERROR 7652 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-CARTAO/ms-cartao:097a4efda4e3b52a10c60b9089e02df5 - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457) ~[eureka-client-1.10.17.jar:1.10.17]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-10-09 14:26:38.853  INFO 7652 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://eureka-server:ZXVyZWthLXNlcnZlcg==@localhost:8761/eureka/}, exception=I/O error on GET request for "http://eureka-server:ZXVyZWthLXNlcnZlcg==@localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://eureka-server:ZXVyZWthLXNlcnZlcg==@localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:608)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getDelta(RestTemplateEurekaHttpClient.java:155)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:109)
+	at org.springframework.http.client.support.BasicAuthenticationInterceptor.intercept(BasicAuthenticationInterceptor.java:79)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:93)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:77)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)
+	... 23 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:580)
+	at java.base/sun.nio.ch.Net.connect(Net.java:569)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:581)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 42 more
+
+2023-10-09 14:26:38.854  WARN 7652 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on GET request for "http://eureka-server:ZXVyZWthLXNlcnZlcg==@localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2023-10-09 14:26:38.854  INFO 7652 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-CARTAO/ms-cartao:097a4efda4e3b52a10c60b9089e02df5 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+2023-10-09 14:26:38.856  INFO 7652 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-10-09 14:26:38.863  INFO 7652 --- [SpringApplicationShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://eureka-server:ZXVyZWthLXNlcnZlcg==@localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://eureka-server:ZXVyZWthLXNlcnZlcg==@localhost:8761/eureka/apps/MS-CARTAO/ms-cartao:097a4efda4e3b52a10c60b9089e02df5": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://eureka-server:ZXVyZWthLXNlcnZlcg==@localhost:8761/eureka/apps/MS-CARTAO/ms-cartao:097a4efda4e3b52a10c60b9089e02df5": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:608)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:197)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:190)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:213)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1163)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1112)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1078)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1024)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:109)
+	at org.springframework.http.client.support.BasicAuthenticationInterceptor.intercept(BasicAuthenticationInterceptor.java:79)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:93)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:77)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)
+	... 38 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:580)
+	at java.base/sun.nio.ch.Net.connect(Net.java:569)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:581)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 57 more
+
+2023-10-09 14:26:38.864  WARN 7652 --- [SpringApplicationShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://eureka-server:ZXVyZWthLXNlcnZlcg==@localhost:8761/eureka/apps/MS-CARTAO/ms-cartao:097a4efda4e3b52a10c60b9089e02df5": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2023-10-09 14:26:38.867 ERROR 7652 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-CARTAO/ms-cartao:097a4efda4e3b52a10c60b9089e02df5 - de-registration failedCannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948) ~[eureka-client-1.10.17.jar:1.10.17]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:197) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:190) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390) ~[spring-cloud-context-3.1.1.jar:3.1.1]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136) ~[spring-cloud-context-3.1.1.jar:3.1.1]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:213) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1163) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1156) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1112) ~[spring-context-5.3.30.jar:5.3.30]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1078) ~[spring-context-5.3.30.jar:5.3.30]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174) ~[spring-boot-2.7.16.jar:2.7.16]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1024) ~[spring-context-5.3.30.jar:5.3.30]
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145) ~[spring-boot-2.7.16.jar:2.7.16]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114) ~[spring-boot-2.7.16.jar:2.7.16]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-10-09 14:26:38.877  INFO 7652 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

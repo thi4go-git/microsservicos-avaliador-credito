@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  eureka:
+    container_name: eureka-discovery
+    image: eureka-discovery:latest
+    build:
+      context: ./eureka-discovery/
+      dockerfile: Dockerfile
+      args:
+        - JAR_FILE=target/eureka-discovery-1.0.0.jar
+        - CONTEXT=eureka-discovery
+    ports:
+      - 8761:8761
+    restart: always
+    networks: 
+      - avaloiador-credito

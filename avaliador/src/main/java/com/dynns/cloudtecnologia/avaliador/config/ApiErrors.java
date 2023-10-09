@@ -1,4 +1,4 @@
-package com.dynns.cloudtecnologia.clientes.config;
+package com.dynns.cloudtecnologia.avaliador.config;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -28,8 +28,15 @@ public class ClienteController {
     @Autowired
     private ClienteMapper clienteMapper;
 
+    private static final String SERVICO_OFF = "Internal Server Error";
+
 
     @GetMapping("/status")
+    @Operation(summary = "Status serviço", description = "Este endpoint Consulta status do serviço")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Serviço rodando"),
+            @ApiResponse(responseCode = "500", description = SERVICO_OFF)
+    })
     ResponseEntity<String> getStatusApi() {
         String staus = "Microsserviço de Clientes rodando!";
         log.info(staus);
@@ -40,7 +47,7 @@ public class ClienteController {
     @Operation(summary = "Criar Cliente", description = "Este endpoint Cria um Cliente.")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "201", description = "Cliente criado!"),
-            @ApiResponse(responseCode = "500", description = "Internal Server Error")
+            @ApiResponse(responseCode = "500", description = SERVICO_OFF)
     })
     ResponseEntity<ClienteDTOnew> save(
             @RequestBody @Valid ClienteDTOnew clienteDTOnew

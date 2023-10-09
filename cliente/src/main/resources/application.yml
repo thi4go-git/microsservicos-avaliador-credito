@@ -31,3 +31,7 @@ management:
       exposure:
         include: '*'
 
+logging:
+  file:
+    name: ./logs/log-file.log
+
