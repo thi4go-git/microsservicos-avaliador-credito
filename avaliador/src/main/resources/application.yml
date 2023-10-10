@@ -5,7 +5,7 @@ spring:
   application:
     name: ms-avaliador
   rabbitmq:
-    host: rabbitmq   #nome do serviço no docker-compose
+    host: localhost
     port: 5672
     username: guest
     password: guest
@@ -17,7 +17,7 @@ mq:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka-server:ZXVyZWthLXNlcnZlcg==@eureka:8761/eureka
+      defaultZone: http://eureka-server:ZXVyZWthLXNlcnZlcg==@localhost:8761/eureka
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 

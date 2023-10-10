@@ -1351,3 +1351,94 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
 
 2023-10-09 16:26:57.267  INFO 13628 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-10-09 17:57:33.506  INFO 19380 --- [restartedMain] c.d.c.avaliador.AvaliadorApplication     : Starting AvaliadorApplication using Java 11.0.2 on THIAGO-PC with PID 19380 (D:\DESENVOLVIMENTO\estudos\microsservicos-avaliador-credito\avaliador\target\classes started by Thiago in D:\DESENVOLVIMENTO\estudos\microsservicos-avaliador-credito\avaliador)
+2023-10-09 17:57:33.517  INFO 19380 --- [restartedMain] c.d.c.avaliador.AvaliadorApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-10-09 17:57:33.586  INFO 19380 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-09 17:57:33.586  INFO 19380 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-09 17:57:35.592  INFO 19380 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=24115312-f0d2-32de-8ec4-b7a4601db5d5
+2023-10-09 17:57:36.452  INFO 19380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-10-09 17:57:36.463  INFO 19380 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-09 17:57:36.463  INFO 19380 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-10-09 17:57:36.599  INFO 19380 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-09 17:57:36.600  INFO 19380 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3013 ms
+2023-10-09 17:57:37.309  WARN 19380 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-10-09 17:57:37.444  INFO 19380 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'ms-cliente' URL not provided. Will try picking an instance via load-balancing.
+2023-10-09 17:57:37.532  INFO 19380 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'ms-cartao' URL not provided. Will try picking an instance via load-balancing.
+2023-10-09 17:57:39.128  INFO 19380 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-10-09 17:57:39.186  WARN 19380 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-10-09 17:57:39.195  INFO 19380 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2023-10-09 17:57:39.255  INFO 19380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 50995 (http) with context path ''
+2023-10-09 17:57:39.255  INFO 19380 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 50995
+2023-10-09 17:57:39.261  INFO 19380 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-10-09 17:57:39.361  INFO 19380 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-10-09 17:57:39.372  INFO 19380 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-10-09 17:57:39.422  INFO 19380 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-10-09 17:57:39.423  INFO 19380 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-10-09 17:57:39.423  INFO 19380 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-10-09 17:57:39.423  INFO 19380 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-10-09 17:57:39.423  INFO 19380 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-10-09 17:57:39.423  INFO 19380 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-10-09 17:57:39.423  INFO 19380 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-10-09 17:57:39.940  INFO 19380 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-10-09 17:57:39.943  INFO 19380 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-10-09 17:57:39.946  INFO 19380 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-10-09 17:57:39.952  INFO 19380 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1696885059951 with initial instances count: 1
+2023-10-09 17:57:39.954  INFO 19380 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MS-AVALIADOR with eureka with status UP
+2023-10-09 17:57:39.955  INFO 19380 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1696885059955, current=UP, previous=STARTING]
+2023-10-09 17:57:39.957  INFO 19380 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-AVALIADOR/ms-avaliador:b7f759377f1d88cc3c1f291d019cc27e: registering service...
+2023-10-09 17:57:40.084  INFO 19380 --- [restartedMain] c.d.c.avaliador.AvaliadorApplication     : Started AvaliadorApplication in 7.965 seconds (JVM running for 9.458)
+2023-10-09 17:57:40.089  INFO 19380 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-AVALIADOR/ms-avaliador:b7f759377f1d88cc3c1f291d019cc27e - registration status: 204
+2023-10-09 18:02:39.428  INFO 19380 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-10-09 18:06:13.068  INFO 19380 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MS-AVALIADOR with eureka with status DOWN
+2023-10-09 18:06:13.069  INFO 19380 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1696885573069, current=DOWN, previous=UP]
+2023-10-09 18:06:13.069  INFO 19380 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-AVALIADOR/ms-avaliador:b7f759377f1d88cc3c1f291d019cc27e: registering service...
+2023-10-09 18:06:13.075  INFO 19380 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-AVALIADOR/ms-avaliador:b7f759377f1d88cc3c1f291d019cc27e - registration status: 204
+2023-10-09 18:06:13.182  INFO 19380 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-10-09 21:02:13.573  INFO 15540 --- [restartedMain] c.d.c.avaliador.AvaliadorApplication     : Starting AvaliadorApplication using Java 11.0.2 on THIAGO-PC with PID 15540 (D:\DESENVOLVIMENTO\estudos\microsservicos-avaliador-credito\avaliador\target\classes started by Thiago in D:\DESENVOLVIMENTO\estudos\microsservicos-avaliador-credito\avaliador)
+2023-10-09 21:02:13.575  INFO 15540 --- [restartedMain] c.d.c.avaliador.AvaliadorApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-10-09 21:02:13.644  INFO 15540 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-09 21:02:13.644  INFO 15540 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-09 21:02:15.435  INFO 15540 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=24115312-f0d2-32de-8ec4-b7a4601db5d5
+2023-10-09 21:02:16.270  INFO 15540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-10-09 21:02:16.282  INFO 15540 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-09 21:02:16.282  INFO 15540 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-10-09 21:02:16.394  INFO 15540 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-09 21:02:16.394  INFO 15540 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2749 ms
+2023-10-09 21:02:17.046  WARN 15540 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-10-09 21:02:17.120  INFO 15540 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'ms-cliente' URL not provided. Will try picking an instance via load-balancing.
+2023-10-09 21:02:17.215  INFO 15540 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'ms-cartao' URL not provided. Will try picking an instance via load-balancing.
+2023-10-09 21:02:18.837  INFO 15540 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-10-09 21:02:18.889  WARN 15540 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-10-09 21:02:18.903  INFO 15540 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2023-10-09 21:02:18.958  INFO 15540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 53316 (http) with context path ''
+2023-10-09 21:02:18.959  INFO 15540 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 53316
+2023-10-09 21:02:18.965  INFO 15540 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-10-09 21:02:19.050  INFO 15540 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-10-09 21:02:19.058  INFO 15540 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-10-09 21:02:19.095  INFO 15540 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-10-09 21:02:19.095  INFO 15540 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-10-09 21:02:19.095  INFO 15540 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-10-09 21:02:19.096  INFO 15540 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-10-09 21:02:19.096  INFO 15540 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-10-09 21:02:19.096  INFO 15540 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-10-09 21:02:19.096  INFO 15540 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-10-09 21:02:19.527  INFO 15540 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-10-09 21:02:19.529  INFO 15540 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-10-09 21:02:19.532  INFO 15540 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-10-09 21:02:19.537  INFO 15540 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1696896139536 with initial instances count: 2
+2023-10-09 21:02:19.539  INFO 15540 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MS-AVALIADOR with eureka with status UP
+2023-10-09 21:02:19.540  INFO 15540 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1696896139540, current=UP, previous=STARTING]
+2023-10-09 21:02:19.542  INFO 15540 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-AVALIADOR/ms-avaliador:f1560731ccd4780635d865a8511b3866: registering service...
+2023-10-09 21:02:19.667  INFO 15540 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-AVALIADOR/ms-avaliador:f1560731ccd4780635d865a8511b3866 - registration status: 204
+2023-10-09 21:02:19.696  INFO 15540 --- [restartedMain] c.d.c.avaliador.AvaliadorApplication     : Started AvaliadorApplication in 7.093 seconds (JVM running for 8.074)
+2023-10-09 21:03:10.926  INFO 15540 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-09 21:03:10.926  INFO 15540 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-09 21:03:10.928  INFO 15540 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-09 21:03:21.082  INFO 15540 --- [http-nio-auto-1-exec-1] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 249 ms
+2023-10-09 21:04:30.041  INFO 15540 --- [http-nio-auto-1-exec-8] c.d.c.a.s.impl.AvaliadorServiceImpl      : CartaoDTOnew(id=null, nome=null, limite=null)
+2023-10-09 21:04:30.047  INFO 15540 --- [http-nio-auto-1-exec-8] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2023-10-09 21:04:30.110  INFO 15540 --- [http-nio-auto-1-exec-8] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#38cc666b:0/SimpleConnection@344f2545 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 53395]
+2023-10-09 21:04:30.146  INFO 15540 --- [http-nio-auto-1-exec-8] c.d.c.a.s.impl.AvaliadorServiceImpl      : ::: Sucesso ao enviar para o Rabbit: AvaliacaoDTO(protocolo=aad429e9-b333-479d-839b-6304e4ae2ab6, clienteDTOnew=ClienteDTOnew(cpf=04922105190, nome=string, idade=0), cartaoDTOnew=CartaoDTOnew(id=null, nome=null, limite=null))
+2023-10-09 21:05:01.372  INFO 15540 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MS-AVALIADOR with eureka with status DOWN
+2023-10-09 21:05:01.373  INFO 15540 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1696896301373, current=DOWN, previous=UP]
+2023-10-09 21:05:01.373  INFO 15540 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-AVALIADOR/ms-avaliador:f1560731ccd4780635d865a8511b3866: registering service...
